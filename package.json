@@ -16,7 +16,6 @@
     "build": "npm run db:migrate & npm run db:seed:all"
   },
   "dependencies": {
-    "@hapi/joi": "^17.1.1",
     "bcryptjs": "^2.4.3",
     "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
