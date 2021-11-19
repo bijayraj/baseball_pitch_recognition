@@ -11,6 +11,7 @@ const apiFiles = glob.sync(routesDir + '/*.js');
 
 const config = require('./config/index');
 
+
 const applicationName = config.swaggerApplicationName;
 
 // Swagger set up
@@ -32,7 +33,7 @@ const options = {
             }
         },
         servers: [{
-            url: '/api/v1/'
+            url: 'https://baseball-pitch-recognition.herokuapp.com/api/v1/'
 
         }]
     },
