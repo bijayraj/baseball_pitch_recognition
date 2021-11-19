@@ -1,0 +1,43 @@
+{
+  "developmentss": {
+    "dialect": "sqlite",
+    "storage": "./src/resource/db3.sqlite3",
+    "seederStorage": "sequelize",
+    "jwtSecret": "Apple ball cat",
+    "swaggerApplicationName": "Baseball Pitch Recognition V1 - Dev",
+    "baseApiPath": "/api/v1"
+  },
+  "tests": {
+    "dialect": "sqlite",
+    "storage": "./src/resource/db3.sqlite3",
+    "seederStorage": "sequelize",
+    "jwtSecret": "Apple ball cat",
+    "swaggerApplicationName": "Baseball Pitch Recognition - Test/Staging",
+    "baseApiPath": "/api/v1",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
+  },
+  "development": {
+    "host": "fanny.db.elephantsql.com",
+    "username": "iqdvjmex",
+    "password": "RS4tsN1FHMthDPdExqzdgYSKDAR2mKFW",
+    "database": "iqdvjmex",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    },
+    "dialect": "postgres",
+    "protocol": "postgres",
+    "operatorAliases": false,
+    "seederStorage": "sequelize",
+    "jwtSecret": "Apple ball cat egg fat goat",
+    "swaggerApplicationName": "Baseball Pitch Recognition- Prod",
+    "baseApiPath": "/api/v1"
+  }
+}
