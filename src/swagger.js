@@ -20,7 +20,7 @@ const options = {
         info: {
             title: applicationName,
             version: "1.0.0",
-            description: "An API project for Voice on the GO project",
+            description: "An API project for Baseball Pitch Recognition",
             license: {
                 name: "MIT",
                 url: "https://choosealicense.com/licenses/mit/"
