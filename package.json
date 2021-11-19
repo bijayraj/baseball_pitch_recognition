@@ -2,6 +2,9 @@
   "name": "baseball-pitch-api",
   "version": "0.0.0",
   "private": true,
+  "engines": {
+    "node": "12.16.2"
+  },
   "scripts": {
     "db:migrate": "npx sequelize db:migrate",
     "db:seed:all": "npx sequelize db:seed:all",
@@ -9,9 +12,11 @@
     "doc:swaggerschemas": "node ./src/get-swagger-doc.js",
     "start": "node ./src/get-swagger-doc.js & node app.js",
     "watch": "npm run db:migrate & npm run db:seed:all & env NODE_ENV=development nodemon app.js",
-    "startprod": "npm run db:migrate & npm run db:seed:all & node app.js"
+    "startprod": "npm run db:migrate & npm run db:seed:all & node app.js",
+    "build": "npm run db:migrate & npm run db:seed:all"
   },
   "dependencies": {
+    "@hapi/joi": "^17.1.1",
     "bcryptjs": "^2.4.3",
     "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
