@@ -33,7 +33,7 @@ const options = {
             }
         },
         servers: [{
-            url: 'https://baseball-pitch-recognition.herokuapp.com/api/v1/'
+            url: '/api/v1/'
 
         }]
     },
@@ -48,6 +48,10 @@ const options = {
 
 
 const specs = swaggerJsdoc(options);
+
+router.get("/swagger.json", (req, res) => {
+    res.send(specs);
+});
 
 router.get("/api-docs.json", (req, res) => {
     res.send(specs);
